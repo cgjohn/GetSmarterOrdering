@@ -1,0 +1,93 @@
+<p id="notice"><%= notice %></p>
+<div>
+
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+
+  <strong>Address:</strong>
+  <%= @restaurant.address %>
+
+  <strong>Website:</strong>
+   <a href="<%= @restaurant.website %>" target="_blank" rel="nofollow"><%= @restaurant.website %></a>
+
+  <strong>Phone:</strong>
+  <%= @restaurant.phone %>
+
+  <%= link_to 'Edit Restaurant Info', edit_restaurant_path(@restaurant) %> 
+
+</div>
+
+
+<div class="forms">
+  <div class="col-sm-6">
+    <h2>Menu Items</h2>
+    <% @restaurant.menu_items.each do |menu_item| %>
+    <div>
+      <strong>Item:</strong>
+      <%= menu_item.item %>
+
+      <strong>Cost:</strong>
+      $<%= menu_item.cost %>
+    </div>
+    <% end %>
+
+    <h4>Add a menu item:</h4>
+    <%= form_for([@restaurant, @restaurant.menu_items.build]) do |f| %>
+    
+    <p>
+      <%= f.label :item %>
+      <%= f.text_field :item %>
+    </p>
+    <p>
+      <%= f.label :cost %>
+      <%= f.text_field :cost %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+    <% end %>
+  </div>
+
+  <div class="col-sm-6">
+    <h2>Orders</h2>
+    <% @restaurant.orders.each do |order| %>
+    <div>
+      <input type="checkbox">
+      <strong>Name:</strong>
+      <%= order.name %>
+
+      <strong>Item:</strong>
+      <%= order.item %>
+
+      <strong>Cost:</strong>
+      $<%= order.cost %>
+    </div>
+    <% end %>
+    <h5>Total: <%= @restaurant.orders.sum(:cost) %></h5>
+    <br>
+    <h4>Add an order item:</h4>
+    <%= form_for([@restaurant, @restaurant.orders.build]) do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+
+    <p>
+      <%= f.label :item %>
+      <%= f.text_field :item %>
+    </p>
+    <p>
+      <%= f.label :cost %>
+      <%= f.text_field :cost %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+    <% end %>
+
+  </div>
+
+</div>
+
+
+<%= link_to 'Back to restaurants', restaurants_path %>
