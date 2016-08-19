@@ -6050,3 +6050,542 @@ Processing by RestaurantsController#show as HTML
 Completed 200 OK in 1818ms (Views: 1814.9ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:01:22 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:16:43 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 2016ms (Views: 2013.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:16:58 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 1753ms (Views: 1750.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:17:28 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 1818ms (Views: 1814.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:17:38 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 1821ms (Views: 1818.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/restaurants/1/orders" for ::1 at 2016-08-19 14:18:00 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Dy/1NIUaH2JEyIZYtzoUZbDDuzt7SKbSPOcUx6Dk4/asT4H64X3Jcdv0BY21pySS84CJaaH28dV/uMHIv1R8w==", "order"=>{"name"=>"asglkbj", "item"=>"afklfgjh", "cost"=>"aglkj"}, "commit"=>"Add Order", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("restaurant_id", "name", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["name", "asglkbj"], ["item", "afklfgjh"], ["cost", #<BigDecimal:7f9a762f3420,'0.0',9(9)>], ["created_at", 2016-08-19 12:18:00 UTC], ["updated_at", 2016-08-19 12:18:00 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:18:00 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 1891ms (Views: 1888.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/restaurants/1/orders" for ::1 at 2016-08-19 14:18:05 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qt/7HgzVwr5lFLf3juvs01TODBlDADvyvVzuuKbEeSWAUnrNNURd5itoRfja4ZgQicMA0Ahqwq6gUZHsmrq7WQ==", "order"=>{"name"=>"asdk;gj", "item"=>"adfglkjh", "cost"=>"adfglkjh"}, "commit"=>"Add Order", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("restaurant_id", "name", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["name", "asdk;gj"], ["item", "adfglkjh"], ["cost", #<BigDecimal:7f9a75bc5a68,'0.0',9(9)>], ["created_at", 2016-08-19 12:18:05 UTC], ["updated_at", 2016-08-19 12:18:05 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 6ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:18:05 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/restaurants/1/orders" for ::1 at 2016-08-19 14:18:09 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+jT1uB8lMOXgwLjzA5EemdqK9TnB9HD/Tif9ZeaGy3DQuXRrJrSvva68SvxXm2paB4f58IqeiaNTKoIx2vgJDA==", "order"=>{"name"=>"adgkjh", "item"=>"aklj", "cost"=>"afglkj"}, "commit"=>"Add Order", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "orders" ("restaurant_id", "name", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["name", "adgkjh"], ["item", "aklj"], ["cost", #<BigDecimal:7f9a73cbfc18,'0.0',9(9)>], ["created_at", 2016-08-19 12:18:09 UTC], ["updated_at", 2016-08-19 12:18:09 UTC]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:18:09 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/restaurants/1/orders" for ::1 at 2016-08-19 14:18:13 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"adV6fAGVcxnc4d0KocLWYqRY5tANCFUlu/+/y1DXJbVDWPuvOATsQZKdLwX1yKKheVXqGUZirHmm8sCfbKnnyQ==", "order"=>{"name"=>"sdfhklj", "item"=>"adlgkj", "cost"=>"fdgljk"}, "commit"=>"Add Order", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "orders" ("restaurant_id", "name", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["name", "sdfhklj"], ["item", "adlgkj"], ["cost", #<BigDecimal:7f9a76cb0da0,'0.0',9(9)>], ["created_at", 2016-08-19 12:18:13 UTC], ["updated_at", 2016-08-19 12:18:13 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:18:13 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/restaurants/1/orders" for ::1 at 2016-08-19 14:18:15 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iPceiaqcZqaqY95amkeMyUb36Wpoot+mVpEnotOTgEGiep9akw35/uQfLFXOTfgKm/rloyPIJvpLnFj27+1CPQ==", "order"=>{"name"=>"adfgkjb", "item"=>"afgkljqsflkjg", "cost"=>""}, "commit"=>"Add Order", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("restaurant_id", "name", "item", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["name", "adfgkjb"], ["item", "afgkljqsflkjg"], ["created_at", 2016-08-19 12:18:15 UTC], ["updated_at", 2016-08-19 12:18:15 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:18:15 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/restaurants/1/orders" for ::1 at 2016-08-19 14:18:18 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jZ5FWIEyqxzdfODCKyROsjfCZtz9iHrToy86ROxq37CnE8SLuKM0RJMAEs1/Ljpx6s9qFbbig4++IkUQ0BQdzA==", "order"=>{"name"=>"adgkjl", "item"=>"aflkgjh", "cost"=>"dflgkjh"}, "commit"=>"Add Order", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("restaurant_id", "name", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["name", "adgkjl"], ["item", "aflkgjh"], ["cost", #<BigDecimal:7f9a75b9f458,'0.0',9(9)>], ["created_at", 2016-08-19 12:18:18 UTC], ["updated_at", 2016-08-19 12:18:18 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:18:18 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/restaurants/1/orders" for ::1 at 2016-08-19 14:18:22 +0200
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xgO9bCSAnwCaedlEnJU11isyzr5XFKp+cA4nRbIaUazsjjy/HREAWNQFK0vIn0EV9j/Cdxx+UyJtA1gRjmST0A==", "order"=>{"name"=>"adsglkjh", "item"=>"dalgkj", "cost"=>"agflkjh"}, "commit"=>"Add Order", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "orders" ("restaurant_id", "name", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["name", "adsglkjh"], ["item", "dalgkj"], ["cost", #<BigDecimal:7f9a6de793c0,'0.0',9(9)>], ["created_at", 2016-08-19 12:18:22 UTC], ["updated_at", 2016-08-19 12:18:22 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:18:22 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:18:37 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 1812ms (Views: 1809.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:20:16 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 1845ms (Views: 1842.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:22:00 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 1799ms (Views: 1796.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:22:26 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 1972ms (Views: 1968.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:22:45 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 1818ms (Views: 1815.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:22:59 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 1798ms (Views: 1795.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:23:21 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 1913ms (Views: 1910.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:23:38 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 1811ms (Views: 1807.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:24:37 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 1895ms (Views: 1892.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:25:26 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 1847ms (Views: 1844.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:25:40 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 41ms (Views: 38.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:26:02 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 1834ms (Views: 1831.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:26:11 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 1810ms (Views: 1807.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/restaurants/1/menu_items" for ::1 at 2016-08-19 14:26:21 +0200
+Processing by MenuItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GANHylQE2cieXeHXZhoHTd0vLJQZZ5oPbuG9wRKrGRQyjsYZbZVGkNAhE9gyEHOOACIgXVINY1Nz7MKVLtXbaA==", "menu_item"=>{"item"=>"asglkjh", "cost"=>"adgkjh`"}, "commit"=>"Add Item", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "menu_items" ("restaurant_id", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["item", "asglkjh"], ["cost", #<BigDecimal:7f9a76171c50,'0.0',9(9)>], ["created_at", 2016-08-19 12:26:21 UTC], ["updated_at", 2016-08-19 12:26:21 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:26:21 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/restaurants/1/menu_items" for ::1 at 2016-08-19 14:26:24 +0200
+Processing by MenuItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O6M6QRDEXWi06cP64IP44MrWtTk2uo78389vMa3PHcgRLruSKVXCMPqVMfW0iYwjF9u58H3Qd6DCwhBlkbHftA==", "menu_item"=>{"item"=>"adgkj", "cost"=>"dfsgkljh"}, "commit"=>"Add Item", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "menu_items" ("restaurant_id", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["item", "adgkj"], ["cost", #<BigDecimal:7f9a76b5af00,'0.0',9(9)>], ["created_at", 2016-08-19 12:26:24 UTC], ["updated_at", 2016-08-19 12:26:24 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:26:24 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/restaurants/1/menu_items" for ::1 at 2016-08-19 14:26:27 +0200
+Processing by MenuItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ITp+FGgQMURdhFWfKP4fNBLqNCd93OonKbfjYQti9IoLt//HUYGuHBP4p5B89Gv3z+c47ja2E3s0upw1Nxw29g==", "menu_item"=>{"item"=>"dfgkj", "cost"=>"adfgklj"}, "commit"=>"Add Item", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "menu_items" ("restaurant_id", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["item", "dfgkj"], ["cost", #<BigDecimal:7f9a75e85488,'0.0',9(9)>], ["created_at", 2016-08-19 12:26:27 UTC], ["updated_at", 2016-08-19 12:26:27 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:26:27 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/restaurants/1/menu_items" for ::1 at 2016-08-19 14:26:29 +0200
+Processing by MenuItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S12o2OohWfDg6reDPHKuPH+AjQ5AP5tYcg5bBaZug5Bh0CkL07DGqK6WRYxoeNr/oo2BxwtVYgRvAyRRmhBB7A==", "menu_item"=>{"item"=>"adgjk", "cost"=>"sdfg;jk"}, "commit"=>"Add Item", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "menu_items" ("restaurant_id", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["item", "adgjk"], ["cost", #<BigDecimal:7f9a6fe53e48,'0.0',9(9)>], ["created_at", 2016-08-19 12:26:29 UTC], ["updated_at", 2016-08-19 12:26:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:26:29 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/restaurants/1/menu_items" for ::1 at 2016-08-19 14:26:32 +0200
+Processing by MenuItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lh4Vzc8GuJlBEx5inzXbUKMRSPDTKmENxRakdFVhySa8k5Qe9pcnwQ9v7G3LP6+TfhxEOZhAmFHYG9sgaR8LWg==", "menu_item"=>{"item"=>"agkj", "cost"=>"sdgf;jk"}, "commit"=>"Add Item", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "menu_items" ("restaurant_id", "item", "cost", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["restaurant_id", 1], ["item", "agkj"], ["cost", #<BigDecimal:7f9a769a8040,'0.0',9(9)>], ["created_at", 2016-08-19 12:26:32 UTC], ["updated_at", 2016-08-19 12:26:32 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:26:32 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/restaurants/1/menu_items" for ::1 at 2016-08-19 14:26:34 +0200
+Processing by MenuItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iZP2UoHB5cDT5BnpVD3mUS+86Omudct7TRtJ55UCMFejHneBuFB6mJ2Y6+YAN5KS8rHkIOUfMidQFjazqXzyKw==", "menu_item"=>{"item"=>"dsfglkjqs", "cost"=>""}, "commit"=>"Add Item", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "menu_items" ("restaurant_id", "item", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["restaurant_id", 1], ["item", "dsfglkjqs"], ["created_at", 2016-08-19 12:26:34 UTC], ["updated_at", 2016-08-19 12:26:34 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/restaurants/1
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:26:34 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.2ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:28:29 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-08-19 14:29:25 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mMenuItem Load (0.1ms)[0m  [1m[34mSELECT "menu_items".* FROM "menu_items" WHERE "menu_items"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[36mOrder Load (0.1ms)[0m  [1m[34mSELECT "orders".* FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT SUM("orders"."cost") FROM "orders" WHERE "orders"."restaurant_id" = ?[0m  [["restaurant_id", 1]]
+  Rendered restaurants/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 1793ms (Views: 1790.7ms | ActiveRecord: 0.4ms)
+
+

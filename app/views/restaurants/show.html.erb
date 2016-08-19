@@ -29,21 +29,24 @@
 <div class="forms">
   <div class="col-sm-6">
     <h2>Menu Items</h2>
-    <% @restaurant.menu_items.each do |menu_item| %>
-    <div class="menuItem">
-      <strong>Item:</strong>
-      <%= menu_item.item %>
+    <div class="menuList">
+      <% @restaurant.menu_items.each do |menu_item| %>
+      <div class="menuItem">
+        <strong>Item:</strong>
+        <%= menu_item.item %>
 
-      <strong>Cost:</strong>
-      $<%= menu_item.cost %>
+        <strong>Cost:</strong>
+        $<%= menu_item.cost %>
 
-      <%= link_to 'Remove', [menu_item.restaurant, menu_item],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Remove', [menu_item.restaurant, menu_item],
+                 method: :delete,
+                 data: { confirm: 'Are you sure?' } %>
+      </div>
+      <% end %>
     </div>
-    <% end %>
     <br>
     <hr class="dividerLine">
+    
     <h4>Add a menu item:</h4>
     <%= form_for([@restaurant, @restaurant.menu_items.build]) do |f| %>
     
@@ -56,32 +59,35 @@
       <%= f.text_field :cost %>
     </p>
     <p>
-      <%= f.submit %>
+      <%= f.submit "Add Item" %>
     </p>
     <% end %>
+
   </div>
 
   <div class="col-sm-6">
     <h2>Orders</h2>
-    <% @restaurant.orders.each do |order| %>
-    <div class="orderItem">
-      <%= check_box_tag 'order_ids[]',  order.id, false %>
-      <strong>Name:</strong>
-      <%= order.name %>
+    <div class="orderList">
+      <% @restaurant.orders.each do |order| %>
+      <div class="orderItem">
+        <%= check_box_tag 'order_ids[]',  order.id, false %>
+        <strong>Name:</strong>
+        <%= order.name %>
 
-      <strong>Item:</strong>
-      <%= order.item %>
+        <strong>Item:</strong>
+        <%= order.item %>
 
-      <strong>Cost:</strong>
-      $<%= order.cost %>
+        <strong>Cost:</strong>
+        $<%= order.cost %>
 
-      <%= link_to 'Remove', [order.restaurant, order],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+        <%= link_to 'Remove', [order.restaurant, order],
+                 method: :delete,
+                 data: { confirm: 'Are you sure?' } %>
+      </div>
+      <% end %>
     </div>
-    <% end %>
-    <h5>Total: <%= @restaurant.orders.sum(:cost) %></h5>
     <br>
+    <h5>Total: <%= @restaurant.orders.sum(:cost) %></h5>
     <hr class="dividerLine">
     <h4>Add an order item:</h4>
     <%= form_for([@restaurant, @restaurant.orders.build]) do |f| %>
@@ -99,7 +105,7 @@
       <%= f.text_field :cost %>
     </p>
     <p>
-      <%= f.submit %>
+      <%= f.submit "Add Order" %>
     </p>
     <% end %>
 

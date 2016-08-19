@@ -1,7 +1,7 @@
 @import "bootstrap";
 
 .forms {
-	padding-top: 50px;
+	padding-top: 20px;
 	text-align: center;
 }
 
@@ -32,4 +32,18 @@ td, th{
 .dividerLine {
 	width: 250px;
 
+}
+
+.orderList{
+	text-align: center;
+ 
+    max-height: 270px;
+    overflow-y: scroll;
+}
+
+.menuList{
+	text-align: center;
+ 
+    max-height: 290px;
+    overflow-y: scroll;
 }
