@@ -5,14 +5,11 @@ class OrdersController < ApplicationController
    redirect_to restaurant_path(@restaurant)
   end
 
-  def sum
-  	@total = 0
-
-  	orders.each do |o|
-  		@total = @total + o.cost
-  	end
-
-  	puts @total
+  def destroy
+    @restaurant = Restaurant.find(params[:restaurant_id])
+    @order = @restaurant.orders.find(params[:id])
+    @order.destroy
+    redirect_to restaurant_path(@restaurant)
   end
 
   private
